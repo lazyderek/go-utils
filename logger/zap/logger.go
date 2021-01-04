@@ -1,7 +1,6 @@
 package zap
 
 import (
-	"github.com/lazyderek/config/yaml"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"io"
