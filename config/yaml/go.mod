@@ -1,4 +1,4 @@
-module github.com/lazyderek/config/yaml
+module github.com/lazyderek/go-util/config/yaml
 
 go 1.13
 
