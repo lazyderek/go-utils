@@ -1,4 +1,4 @@
-module go-util
+module github.com//lazyderek/go-util
 
 go 1.13
 
