@@ -3,12 +3,12 @@ package types
 // mapKeyType map key的约束
 type mapKeyType interface {
 	~string |
-	~uint8 | ~int8 |
-	~uint16 | ~int16 |
-	~int | ~uint |
-	~uint32 | ~int32 |
-	~int64 | ~uint64 |
-	~float32
+		~uint8 | ~int8 |
+		~uint16 | ~int16 |
+		~int | ~uint |
+		~uint32 | ~int32 |
+		~int64 | ~uint64 |
+		~float32
 }
 
 // GenericMap 泛型 map
@@ -37,7 +37,7 @@ type MapKeySelector[K mapKeyType, V any] func(v V) K
 // map[1:{i} 2:{2}]
 func Array2Map[K mapKeyType, V any](
 	kSelector MapKeySelector[K, V], // key选择器，自定义函数
-	array []V,                      // 数组
+	array []V, // 数组
 ) GenericMap[K, V] {
 	m := make(GenericMap[K, V], len(array))
 	for _, a := range array {
